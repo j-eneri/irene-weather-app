@@ -1,0 +1,54 @@
+body {
+  background-color: #fff;
+  color: #fff;
+}
+
+h1 {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.app-body {
+  background-image: linear-gradient(to top, #8999d8 0%, #e4e5ff 100%);
+  max-width: 800px;
+  border: white solid;
+  padding: 30px;
+  margin: 50px auto;
+  border-radius: 10px;
+}
+
+.main-weather-icon {
+  width: 200px;
+  height: 200px;
+}
+
+.main-temperature {
+  font-size: 60px;
+}
+
+.unit {
+  position: relative;
+  bottom: 25px;
+}
+
+.weather {
+  padding-top: 40px;
+  padding-right: 50px;
+  text-align: right;
+}
+
+.local-info {
+  padding-top: 15px;
+}
+
+.detail-info {
+  position: relative;
+  bottom: 75px;
+  left: 205px;
+  font-size: 10px;
+}
+
+.days-info {
+  text-align: center;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Irene Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/newstyle.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card app-body">
+        <form id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <div class="mb-3">
+                <input
+                  type="search"
+                  class="form-control"
+                  id="search-cities"
+                  placeholder="Search a city..."
+                />
+              </div>
+            </div>
+
+            <div class="col-3">
+              <input
+                type="submit"
+                class="search-button btn btn-light"
+                value="Search"
+              />
+            </div>
+
+            <div class="col-3 current-location">
+              <input
+                type="submit"
+                class="search-button btn btn-light"
+                value="Current location"
+                id="current-location-button"
+              />
+            </div>
+          </div>
+        </form>
+
+        <form class="main-form">
+          <div class="row">
+            <div class="col-6">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                alt="sunny weather"
+                class="main-weather-icon"
+              />
+              <span class="main-temperature" id="temperature"> 19 </span>
+              <span class="unit">
+                <a href="#" id="celsius">˚C</a> |
+                <a href="#" id="fahrenheit">˚F</a>
+              </span>
+
+              <div class="detail-info">
+                <div>Humidity: <span id="humidity">0</span>%</div>
+                <div>Wind: <span id="wind">0</span> km/h</div>
+              </div>
+            </div>
+
+            <div class="col-6 weather">
+              <h1>Los Angeles, CA</h1>
+              <div class="local-info">
+                <div class="date-time" id="current"></div>
+                <div class="weather-text" id="description">Sunny</div>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <form>
+          <div class="row days-info">
+            <div class="col-2">
+              <div>Wednesday</div>
+
+              <div>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                  alt="Partly cloud"
+                />
+              </div>
+
+              <div>19˚ | 11˚</div>
+            </div>
+
+            <div class="col-2">
+              <div>Thursday</div>
+
+              <div>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                  alt="Partly cloud"
+                />
+              </div>
+
+              <div>19˚ | 12˚</div>
+            </div>
+
+            <div class="col-2">
+              <div>Friday</div>
+
+              <div>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                  alt="Partly cloud"
+                />
+              </div>
+              <div>18˚ | 10˚</div>
+            </div>
+
+            <div class="col-2">
+              <div>Saturday</div>
+
+              <div>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+                  alt="Sunny"
+                />
+              </div>
+
+              <div>22˚ | 13˚</div>
+            </div>
+
+            <div class="col-2">
+              <div>Sunday</div>
+
+              <div>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+                  alt="Sunny"
+                />
+              </div>
+
+              <div>28˚ | 15˚</div>
+            </div>
+
+            <div class="col-2">
+              <div>Monday</div>
+
+              <div>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                  alt="Partly cloud"
+                />
+              </div>
+
+              <div>29˚ | 15˚</div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="src/newapp.js"></script>
+  </body>
+</html>
