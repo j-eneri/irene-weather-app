@@ -23,6 +23,10 @@ footer {
   margin-top: -20px;
 }
 
+.search-button {
+  color: rgb(59, 59, 59);
+}
+
 .app-body {
   background-image: linear-gradient(to top, #7a89c1 0%, #ffdddd 90%);
   max-width: 800px;
@@ -32,18 +36,22 @@ footer {
   border-radius: 10px;
 }
 
+.temperature-weather-info {
+  padding: 20px;
+}
+
 .main-weather-icon {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 
 .main-temperature {
-  font-size: 60px;
+  font-size: 70px;
 }
 
 .unit {
   position: relative;
-  bottom: 25px;
+  bottom: 35px;
 }
 
 .weather {
@@ -53,19 +61,29 @@ footer {
 }
 
 .local-info {
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 .detail-info {
   position: relative;
-  bottom: 75px;
-  left: 205px;
-  font-size: 10px;
+  bottom: 55px;
+  left: 170px;
+  font-size: 11px;
 }
 
 .days-info {
   text-align: center;
   margin-bottom: 20px;
+}
+
+.date-time {
+  font-size: 18px;
+}
+
+.weather-text {
+  font-size: 15px;
+  color: rgb(59, 59, 59);
+  margin-top: -3px;
 }
 
 .temperature-weather-info .active {
