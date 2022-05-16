@@ -8,6 +8,21 @@ h1 {
   text-transform: capitalize;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  font-size: 12px;
+  margin-top: -20px;
+}
+
 .app-body {
   background-image: linear-gradient(to top, #8999d8 0%, #e4e5ff 100%);
   max-width: 800px;
@@ -53,8 +68,11 @@ h1 {
   margin-bottom: 20px;
 }
 
-.github-link {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
+.temperature-weather-info .active {
+  color: #fff;
+  cursor: default;
+}
+
+.temperature-weather-info .active:hover {
+  text-decoration: none;
 }
