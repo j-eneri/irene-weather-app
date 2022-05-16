@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  background-color: rgb(245, 245, 245);
   color: #fff;
 }
 
@@ -24,7 +24,7 @@ footer {
 }
 
 .app-body {
-  background-image: linear-gradient(to top, #8999d8 0%, #e4e5ff 100%);
+  background-image: linear-gradient(to top, #7a89c1 0%, #ffdddd 90%);
   max-width: 800px;
   border: white solid;
   padding: 30px;

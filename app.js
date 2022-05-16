@@ -34,6 +34,7 @@ function weatherConditionInfo(response) {
   let humidity = document.querySelector("#humidity");
   let wind = document.querySelector("#wind");
   let description = document.querySelector("#description");
+  let mainIcon = document.querySelector("#main-weather-icon");
 
   celsiusTemp = response.data.main.temp;
 
@@ -42,6 +43,10 @@ function weatherConditionInfo(response) {
   humidity.innerHTML = response.data.main.humidity;
   wind.innerHTML = Math.round(response.data.wind.speed);
   description.innerHTML = response.data.weather[0].description;
+  mainIcon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function cities(city) {
