@@ -27,6 +27,35 @@ let dayTime = document.querySelector("#current");
 let now = new Date();
 dayTime.innerHTML = formatDate(now);
 
+function displayForecast() {
+  let forecast = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+
+  let days = ["Wed", "Thu", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+            <div class="col-2">
+              <div class="forecst-date">${day}</div>
+              
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+                  alt="Sunny"
+                />
+
+              <div class="forecast-temperatures">
+              <span class="forecast-temp-max">19˚</span> <span class="forecast-temp-min">11˚</span>
+              </div>
+            </div>       
+`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecast.innerHTML = forecastHTML;
+}
+
 function weatherConditionInfo(response) {
   console.log(response);
   let city = document.querySelector("h1");
@@ -112,3 +141,4 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", currentLocation);
 
 cities("london");
+displayForecast();

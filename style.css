@@ -71,9 +71,17 @@ footer {
   font-size: 11px;
 }
 
-.days-info {
+.weather-forecast {
   text-align: center;
   margin-bottom: 20px;
+}
+
+.forecast-temperatures {
+  font-size: 15px;
+}
+
+.forecast-temp-min {
+  opacity: 0.7;
 }
 
 .date-time {
