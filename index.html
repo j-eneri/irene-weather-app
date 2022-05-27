@@ -11,25 +11,23 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <div class="container">
-      <div class="card app-body">
-        <form id="search-form">
+      <div class="app-body">
+        <form id="search-form" class="mb-3">
           <div class="row">
             <div class="col-6">
-              <div class="mb-3">
-                <input
-                  type="search"
-                  class="form-control"
-                  id="search-cities"
-                  placeholder="Search a city..."
-                  autocomplete="off"
-                />
-              </div>
+              <input
+                type="search"
+                class="form-control"
+                id="search-cities"
+                placeholder="Search a city..."
+                autocomplete="off"
+              />
             </div>
 
             <div class="col-3">
@@ -56,7 +54,7 @@
             <div class="col-6">
               <div class="temperature-weather-info">
                 <img
-                  src="..."
+                  src=""
                   alt="main weather"
                   class="main-weather-icon"
                   id="main-weather-icon"
@@ -68,8 +66,8 @@
                 </span>
 
                 <div class="detail-info">
-                  <div>Humidity: <span id="humidity">0</span>%</div>
-                  <div>Wind: <span id="wind">0</span> km/h</div>
+                  <div>Humidity: <span id="humidity"></span>%</div>
+                  <div>Wind: <span id="wind"></span> km/h</div>
                 </div>
               </div>
             </div>
@@ -78,7 +76,7 @@
               <h1></h1>
               <div class="local-info">
                 <div class="date-time" id="current"></div>
-                <div class="weather-text" id="description">Sunny</div>
+                <div class="weather-text" id="description"></div>
               </div>
             </div>
           </div>
@@ -86,17 +84,18 @@
 
         <div class="weather-forecast" id="forecast"></div>
       </div>
-      <footer>
-        <a
-          href="https://github.com/j-eneri/irene-weather-app.git"
-          target="_blank"
-          class="github-link"
-        >
-          Open-source code
-        </a>
-        by Irene Jang
-      </footer>
     </div>
+
+    <footer>
+      <a
+        href="https://github.com/j-eneri/irene-weather-app.git"
+        target="_blank"
+        class="github-link"
+      >
+        Open-source code
+      </a>
+      by Irene Jang
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>
